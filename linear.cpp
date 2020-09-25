@@ -3,14 +3,14 @@
 
 #include "linear.h"
 #include "matrix.h"
+#include <iostream>
 
-using namespace std;
 
 int main()
 {
-	Matrix<int> mat(5,5, 1);
-	mat.Print();
-	mat(0, 0) = 0;
-	mat.Print();
+	Matrix<int> mat1(5, 4, 1);
+	Matrix<int> mat2(5, 5, 2);
+	mat1 *= 7;
+	std::cout << mat1;
 	return 0;
 }
